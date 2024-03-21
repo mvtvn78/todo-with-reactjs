@@ -1,0 +1,193 @@
+*,*::before,*::after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* CSS FOR MODAL */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: .5;
+  }
+  
+  .modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+  }
+  
+  .modal {
+    z-index: 100;
+    background: white;
+    position: relative;
+    margin: 1.75rem auto;
+    border-radius: 3px;
+    max-width: 500px;
+    padding: 2rem;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .modal-close-button {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    opacity: .3;
+    cursor: pointer;
+    border: none;
+  }
+ 
+/* CSS FOR TODO  */
+.notification{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.container
+{
+    width: 1000px;
+    background: #F9E897;
+    margin: 0 auto;
+    padding: 30px;
+}
+.time{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+    color: #124076;
+    margin-bottom: 15px;
+    border: 1px solid rgba(37, 37, 129,0.1)
+}
+.date{
+    font-family: 'Times New Roman', Times, serif;
+    color: #124076;
+}
+.info{
+    color:#7F9F80
+}
+.info > h3{
+    margin-top: 10px;
+    border: 1px solid rgba(37, 37, 129,0.1);
+    color:#124076;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.todo {
+    text-align: center;
+    width: 900px;
+}
+.list >h3 {
+    color: #7F9F80;
+    font-weight: bold;
+    padding: 10px;
+}
+.list ul {
+    list-style: none;
+    border: 1px solid  #FFC374;
+    padding: 10px;
+}
+.list ul > li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    text-align: justify;
+    margin-left: 300px;
+}
+svg {
+    border-radius: 30%;
+    width: 30px;
+    height: 30px;
+    transition: all 0.9s;
+}
+svg:hover {
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+}
+button {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+label
+{
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+img {
+    opacity: 0.8;
+    scale: 1;
+    transition: all 0.6s;
+}
+img:hover {
+    scale: 1.2;
+    opacity: 1.0;
+    cursor: pointer;
+}
+input {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 15px;
+    padding: 20px;
+    height: 35px;
+    transition: all 0.4s;
+}
+input:hover {
+    font-size: 19px;
+}
+
+.btn-Add {
+    width: 100px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+    color: #FFC374;
+    background:#124076;
+    opacity: 0.8;
+    outline: none;
+    scale: 1;
+    transition: all 1s;
+}
+span ~ .btn-complete:hover {
+    color:red;
+}
+
+button{
+    cursor: pointer;
+}
+.btn-Add:hover {
+    scale: 1.1;
+    color: #e2a619; 
+    opacity: 1;
+    
+}
+
+span {
+    color:#1b0556;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.4s;
+}
+span:hover{
+    color:#3104af;
+    font-size: 35px;
+}
